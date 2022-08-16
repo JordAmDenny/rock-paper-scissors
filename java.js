@@ -8,6 +8,7 @@ function getComputerChoice() {
 }
 
 let computerSelection = getComputerChoice();
+let playerSelection = "rock";
 
 function playGame (playerSelection, computerSelection) {
 
@@ -25,7 +26,11 @@ function playGame (playerSelection, computerSelection) {
   } else    (playerSelection === "rock" && computerSelection === "paper") ||
            (playerSelection === "paper" && computerSelection === "scissors") || 
             (playerSelection === "scissors" && computerSelection === "rock") 
-  { return "You Lose!"
+  { comScore +=1
+    console.log("Computer takes this round, it has" + comScore + "points")
+    if (comScore == 5) {
+      console.log("Computer wins the set")
+    }
  }
 }
 
