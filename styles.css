@@ -1,0 +1,11 @@
+#restart {
+    background-color: lightblue;
+    width: 100px;
+    height: 50px;
+    border: 4px;
+}
+
+.rstbtn {
+    display: flex;
+    justify-content: center;
+}
