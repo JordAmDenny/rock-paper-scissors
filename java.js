@@ -1,14 +1,23 @@
 const choices = ["rock", "paper", "scissors"];
 let playerScore = 0
 let comScore = 0
+let computerSelection = getComputerChoice();
+let playerSelection
+//let rockbtn = document.getElementById("rock")
+//let paperbtn = document.getElementById("paper")
+//let scissorsbtn = document.getElementById("scissors")
 
 function getComputerChoice() {
     let random = choices[Math.floor(Math.random() * choices.length)];
     return random;
 }
 
-let computerSelection = getComputerChoice();
-let playerSelection = "rock";
+//rockbtn.addEventListener('click', () => click("rock"))
+//paperbtn.addEventListener('click', () => click("paper"))
+//scissorsbtn.addEventListener('click', () => click("scissors"))
+
+//function click(playerSelection)
+
 
 function playGame (playerSelection, computerSelection) {
 
